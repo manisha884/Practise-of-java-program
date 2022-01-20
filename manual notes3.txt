@@ -1,0 +1,346 @@
+
+1. What are the phases involved in Software Testing Life Cycle?
+The different phases involved in the software testing life cycle are:
+
+Requirement Analysis	Here, the QA team understands the requirements and identify the testable requirements.
+Test Planning	In this phase, the test strategy is defined.
+Test Case Development	Here, detailed test cases are defined and developed.
+Environment Setup	It is a setup of software and hardware for the testing teams to execute test cases.
+Test Execution	It is the process of executing the code and comparing the expected and actual results.
+Test Cycle Closure	It involves calling out the testing team member meeting & evaluating cycle completion criteria based on test coverage, quality, cost, time, critical business objectives, and software.
+2. What are the different methods of testing?
+There are three methods of software testing and they are as follows:
+
+Black-box testing: It is a testing strategy based solely on requirements and specifications. In this strategy, it requires no knowledge of internal paths, structures, or implementation of the software being tested.
+White box testing: It is a testing strategy based on internal paths, code structures, and implementation of the software being tested. White box testing generally requires detailed programming skills.
+Gray box testing: It is a strategy for software debugging in which the tester has limited knowledge of the internal details of the program.
+3. What are the different levels of testing?
+There are mainly four testing levels and they are:
+
+Unit Testing
+Integration Testing
+System Testing
+Acceptance Testing
+Basically, it starts with the Unit Testing phase and ends with Acceptance Testing.
+
+4. Explain Bug Life Cycle or Defect life cycle.
+A defect life cycle is a process in which a defect goes through various phases during its entire lifetime. It starts when a defect is found and ends when a defect is closed, after ensuring it’s not reproduced.
+
+Bug or defect life cycle includes the steps as illustrated in the below figure. If you wish to learn in depth about Bug Life Cycle then you can refer my article on Software Testing Tutorial.
+
+Defect life cycle - Software Testing Interview Questions - EdurekaIt can vary from organization to organization and also from project to project based on several factors like organization policy, software development model used (like Agile, Iterative), project timelines, team structure etc.
+
+5. What is a test case?
+A test case is nothing but a set of conditions or variables under which a tester will determine whether a system under test satisfies requirements or works correctly. 
+
+6. What is the difference between functional and non-functional testing?
+Functional Testing	Non Functional Testing
+Performed before non-functional testing
+
+Performed after functional testing
+
+Based on customer requirements
+
+Based on customers expectations
+
+Describes what the product does
+
+Describes how the product works
+
+7. What is Verification and Validation in Software Testing?
+Verification: It is a static analysis technique. Here, testing is done without executing the code. Examples include – Reviews, Inspection, and walkthrough.
+
+Validation: It is a dynamic analysis technique where testing is done by executing the code. Examples include functional and non-functional testing techniques.
+
+In the V model, the development and QA activities are done simultaneously. There is no discrete phase called Testing, rather testing starts right from the requirement phase.  The verification and validation activities go hand in hand.
+
+8. What is usability testing?
+It is a testing methodology where the end customer is asked to use the software to see if the product is easy to use, to see the customer’s perception and task time. An accurate way to finalize the customer point of view for usability is by using prototype or mock-up software during the initial stages.
+
+9. What are the categories of defects?
+There are three main categories of defects as shown in the below figure:Defect Types - Software Testing Interview Questions - Edureka
+
+Wrong: It implies that requirements have been implemented incorrectly. It is a variance from the given specification.
+Missing: This is a variance from the specifications, an indication that a specification was not implemented, or a requirement of the customer was not noted properly.
+Extra: It is a requirement incorporated into the product that was not given by the end customer. It is always a variance from the specification but may be an attribute desired by the user of the product.
+Top 50 Software Testing Interview Questions & Answers
+10. On what basis the acceptance plan is prepared?
+Basically, the acceptance document is prepared using the following inputs.
+
+Requirement document: It specifies what exactly is needed in the project from the customers perspective.
+Input from the customer: This can be discussions, informal talks, emails, etc.
+Project plan: The project plan prepared by the project manager also serves as good input to finalize your acceptance test.
+11. What is coverage and what are the different types of coverage techniques?
+The parameter used in software testing to describe the extent to which the source code is tested is known as coverage. There are three basic types of coverage techniques and they are:
+
+Statement coverage: It ensures that each line of source code has been executed and tested.
+Decision coverage: It assures that every decision (true/false) in the source code has been executed and tested.
+Path coverage: Here we ensure that every possible route through a given part of the code is executed and tested.
+12. What are the benefits of Automation testing?
+Benefits of Automation testing are:
+
+Supports execution of repeated test cases
+Aids in testing a large test matrix
+Enables parallel execution
+Encourages unattended execution
+Improves accuracy thereby reducing human-generated errors
+Saves time and money
+13. Why Selenium is a preferred tool for Automation testing?
+Selenium is an open source tool which is used for automating the tests carried out on web browsers. Since Selenium is open-source, there is no licensing cost involved, which is a major advantage over other testing tools. Other reasons behind Selenium’s ever-growing popularity are:
+
+Test scripts can be written in any of these programming languages: Java, Python, C#, PHP, Ruby, Perl &.Net
+Tests can be carried out in any of these OS: Windows, Mac or Linux
+Tests can be carried out using any browser: Mozilla Firefox, Internet Explorer, Google Chrome, Safari or Opera
+It can be integrated with tools such as TestNG & JUnit for managing test cases and generating reports
+It can be integrated with Maven, Jenkins & Docker to achieve Continuous Testing
+14. What are the various components of Selenium?
+Different components of Selenium are:
+
+Selenium Integrated Development Environment (IDE)
+Selenium Remote Control (RC)
+Selenium WebDriver
+Selenium Grid
+15. What are the different types of locators in Selenium?
+The locator is nothing but an address that identifies a web element uniquely within the webpage. Thus, to identify web elements accurately and precisely we have different types of locators in Selenium as follows:
+
+ID
+ClassName
+Name
+TagName
+linkText
+PartialLinkText
+Xpath
+CSS Selector
+DOM
+16. What is XPath?
+XPath also called as XML Path is a language to query XML documents. It is an important strategy to locate elements in selenium. It consists of a path expression along with some conditions. Here, you can easily write XPath script/query to locate any element in the webpage. It is designed to allow the navigation of XML documents, with the purpose of selecting individual elements, attributes, or some other part of an XML document for specific processing. It also produces reliable locators.
+
+Course Curriculum
+Software Testing Fundamentals Course
+Instructor-led SessionsReal-life Case StudiesAssessmentsLifetime Access
+17. What is the difference between Absolute and Relative Path?
+Absolute XPath
+It is the direct way to find the element, but the disadvantage of the absolute XPath is that, if there are any changes made in the path of the element then that XPath gets failed. For example: /html/body/div[1]/section/div[1]/div
+
+Relative XPath
+For Relative XPath, the path starts from the middle of the HTML DOM structure. It begins with the double forward slash (//), which means it can search the element anywhere at the webpage. For example: //input[@id=‘ap_email’]
+
+18. What are the different exceptions in Selenium WebDriver?
+Exceptions in Selenium are similar to exceptions in other programming languages. The most common exceptions in Selenium are:
+
+TimeoutException
+NoSuchElementException
+ElementNotVisibleException
+StaleElementException
+19. When should I use Selenium Grid?
+Selenium Grid can be used to execute same or different test scripts on multiple platforms and browsers concurrently so as to achieve distributed test execution, testing under different environments and saving execution time remarkably.
+
+20. How do I launch the browser using WebDriver?
+The following syntax can be used to launch the Browser:
+WebDriver driver = new FirefoxDriver();
+WebDriver driver = new ChromeDriver();
+WebDriver driver = new InternetExplorerDriver();
+
+Intermediate Level Software Testing Interview Questions
+21. Should testing be done only after the build and execution phases are complete?
+Testing is always done after the build and execution phases Earlier we catch a defect, the more cost effective it is. For example, fixing a defect in maintenance is ten times more costly than fixing it during execution.
+
+22. What’s the relationship between environment reality and test phases?
+As test phases start moving ahead environment reality becomes more important. For example, while unit testing, you need the environment to be partly real, but at the acceptance phase you should have a 100% real environment, or we can say it should be the actual real environment.
+
+Environment Reality vs Testing phase - Software Testing Interview Questions - EdurekaThe above graph shows during acceptance testing it should be 100% real.
+
+23. A defect which could have been removed during the initial stage is removed in a later stage. How does this affect the cost?
+If at the initial stage a defect is identified, then it should be removed during that stage/phase itself rather than at some later stage. It’s a fact that if a defect is delayed for later phases it becomes more costly. The following figure shows how a defect is costly as the phases move forward.
+
+Cost effective - Software Testing Interview Questions - EdurekaIf a defect is identified and removed during the design phase, it is the most cost effective but when removed during maintenance it becomes twenty times costlier.
+
+24. What do you mean by regression and confirmation testing?
+Regression Testing: It is defined as a type of software testing to confirm that a recent code change has not adversely affected existing features.
+
+Confirmation Testing: When a test fails because of the defect, the defect is reported. Then a new version of the software is submitted whose defect is fixed. This is called as confirmation testing or re-testing.
+
+25. What do you mean by boundary value analysis?
+Boundary Value Analysis (BVA) is a black box test design technique which is applied to see if there are any bugs at the boundary of the input domain.
+
+26. What is Random testing?
+Usually, in Random testing, data is generated randomly often using a tool. For example, the following figure shows how randomly-generated data is sent to the system.
+
+Random Testing-Software Testing Interview Questions - EdurekaThis data is generated either using a tool or some automated mechanism. With this randomly generated input, the system is then tested and results are observed accordingly.
+
+27. On what basis you can arrive at an estimation for your project?
+To estimate your project, you have to consider the following points:
+
+Divide the whole project into the smallest tasks
+Allocate each task to team members
+Estimate the effort required to complete each task
+Validate the estimation
+28. Which test cases are written first: white boxes or black boxes?
+Usually, black box test cases are written first and white box test cases later. To write black box test cases we need the requirement document and, design or project plan. These documents are easily available at the initial start of the project. White box test cases cannot be started in the initial phase of the project because they need more architecture clarity which is not available at the start of the project. So normally white box test cases are written after black box test cases are written.
+
+29. Mention the basic components of defect report format.
+The basic components of defect report format include:
+
+Project Name
+Module Name
+Defect detected on
+Defect detected by
+Defect ID and Name
+Snapshot of the defect
+Priority and Severity status
+Defect resolved by
+Defect resolved on
+Top 50 Software Testing Interview Questions & Answers
+30. Is Automation testing in agile methodology useful?
+Automation testing is very useful in agile methodology and helps in achieving maximum test coverage in a lesser time of the sprint.
+
+31. Which test cases can be automated?
+Smoke test cases
+Regression test cases
+Complex calculation test cases
+Data-driven test cases
+Non-functional test cases
+32. On what basis you can map the success of Automation testing?
+By following criteria, the success of Automation testing can be mapped:
+
+Defect Detection Ratio
+Automation execution time and time savings to release the product
+Reduction in Labour & other costs
+33. Explain Load Testing on websites?
+To access a website, a user sends a “request” to that website’s server, and the server sends back a response in the form of the website you want to access. To load test a website, quality assurance engineers and automation engineers just need to multiply the number of responses sent to simulate different traffic loads. The web server’s response to the influx of virtual users can then be measured. This is used to determine performance issues and server capacity.
+
+34. What is the difference between Selenium and Sikuli?
+Selenium	Sikuli
+It cannot automate flash objects like video player, audio player etc.	It provides extensive support to automate flash objects
+It has got complicated API	It has a simple API
+It can automate only web applications	It can automate the web as well as a windows application.
+35. How to click on a hyperlink using linkText()?
+1
+driver.findElement(By.linkText(“Google”)).click();
+This command finds the element using link text and then click on that element. Thus, the user would be re-directed to the corresponding page.
+
+36. What is TestNG?
+It is an advanced framework which is designed in a way to leverage the benefits by both the developers and testers. It also has an inbuilt exception handling mechanism which lets the program to run without terminating unexpectedly.
+
+37. How to set test case priority in TestNG?
+Below code helps you to understand how to set test case priority in TestNG. 
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+package TestNG;
+import org.testng.annotations.*;
+public class SettingPriority {
+@Test(priority=0)
+public void method1() {
+}
+@Test(priority=1)
+public void method2() {
+}
+@Test(priority=2)
+public void method3() {
+}
+}
+Test Execution Sequence:
+
+Course Curriculum
+Software Testing Fundamentals Course
+1
+2
+3
+Method1
+Method2
+Method3
+38. What is the difference between Selenium and QTP?
+Selenium	Quick Test Professional
+Selenium supports almost all the popular browsers like Firefox, Chrome, Safari, Internet Explorer, Opera etc	QTP supports Internet Explorer, Firefox and Chrome. QTP only supports Windows Operating System
+Selenium is distributed as an open source tool and is freely available	QTP is distributed as a licensed tool and is commercialized
+Selenium supports testing of only web-based applications	QTP supports testing of both the web-based application and windows based application
+39. What is Object Repository? How can we create Object Repository in Selenium?
+Object Repository refers to the collection of web elements belonging to Application Under Test (AUT) along with their locator values. With respect to Selenium, objects can be stored in an excel sheet which can be populated inside the script whenever required.
+
+40. How to input text in the text box using Selenium WebDriver?
+By using sendKeys()method we can input the text in the text box using Selenium WebDriver.
+
+Advance Level Software Testing Interview Questions
+41. What kind of input do we need from the end user to begin proper testing?
+An end user is the most important person because he is the one who has to use the product and has a keen interest that anyone else in the project.
+
+Input from user- Software Testing Interview Questions - EdurekaAbove figure illustrates the input that is essential from the user end.
+
+42. What is meant by workbench concept?
+A workbench at its core is a way of documenting how a specific activity has to be performed. It is often referred to as phases, steps, and tasks as shown in the following figure.
+
+Workbench concept-Software Testing Interview Questions - EdurekaThere are five tasks for every workbench and they are as follows:
+
+Input
+Execute
+Check
+Production output
+Rework
+43. What is meant by Defect Cascading?
+Defect cascading is a defect which is caused by another defect. One defect triggers the other defect. When a defect is present in any stage but is not identified, hide to other phases without getting noticed. This will result in an increase in the number of defects.
+
+Let us understand this by an example.
+
+You are designing the Login Module of a WebPage:
+
+In phase 1 – You are designing Register User Module for Login and mobile number is mandatory but you can leave it blank due to a bug that gets unnoticed.
+
+In Phase 2 – You will design the login form having username and password. The password is OTP which will be sent to User’s registered mobile number.
+
+Now as Register module has a bug that mobile number can be left blank so this may lead to Login failure or maybe some system error or crash if a null mobile number is not handled. This is known as defect cascading.
+
+44. What are the different strategies for rollout to end users? 
+
+The strategies to be followed for rollout are as follows:
+
+Pilot
+Gradual Implementation
+Phased Implementation
+Parallel Implementation
+45. Explain how can you find broken links in a page using Selenium WebDriver?
+This is a tricky question which the interviewer might present to you. He can provide a situation wherein there are 20 links in a web page, and we have to verify which of those 20 links are working and how many are not working (broken).
+
+As you have to verify the working of every link, the workaround is that you need to send HTTP requests to all of the links on the web page and analyze the response. Whenever you use driver.get() method to navigate to a URL, it will respond with a status of 200 – OK. This indicates that the link is working and it has been obtained. Whereas any other status indicates that the link is broken.
+
+Let’s now understand how to do that.
+
+First, we have to use the anchor tags <a> to determine the different hyperlinks on the web page. For every <a> tag, we can use the attribute ‘href’ value to obtain the hyperlinks and then analyze the response received when used in driver.get() method.
+
+46. Which technique should be considered in the script “if there is neither frame id nor frame name”?
+If frame name and frame id is not available, then we can use frame by index. For example, there are 3 frames in a web page and if none of them have a frame name and frame id, then we can still select those frames by using frame (zero-based) index attribute. All the frame will have an index number like the first frame would be at index “0”, the second at index “1” and the third at index “2”.
+
+1
+driver.switchTo().frame(int arg0);
+47. How to take screenshots in Selenium WebDriver?
+By using the TakeScreenshot function you can take a screenshot. With the help of getScreenshotAs() method, you can simply save that screenshot. Example: File scrFile = ((TakeScreenshot)driver).getScreenshotAs(outputType.FILE);
+
+48.  Explain how you will log in into any site if it is showing any authentication popup for username and password?
+If there is a pop up for logging in, we need to use the explicit command and verify if the alert is actually present. The below code helps you understand the use of explicit wait command.
+
+1
+2
+3
+WebDriverWait wait = new WebDriverWait(driver, 10);
+Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+alert.authenticateUsing(new UserAndPassword(**username**, **password**));
+49. How to skip a method or a code block in TestNG?
+
+To skip a particular test method or a code, then you can set the ‘enabled’ parameter in test annotation to false.
+@Test(enabled = false)
+
+50. Briefly explain what does below code snippet indicate?
+1
+WebElement sample = driver.findElement(By.xpath("//*[contains(text(), 'data')]"));
+It defines a variable sample of type WebElement, and uses an XPath search to initialize it with a reference to an element that contains the text value “data”.
